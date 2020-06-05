@@ -1,0 +1,328 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    height: 100%;
+}
+html {
+    overflow-y: hidden;
+}
+body {
+    overflow-y: scroll;
+}
+
+.faq p{
+    margin-top: 10px;
+    font-size: large;
+}
+.faq h6{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.head{
+    height: 500px;
+    background-image: url(../images/Banner/banner.png);
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    background-attachment: scroll;
+
+
+}
+
+@media (max-width: 650px) {
+    .head{
+        background-attachment: scroll;
+    }
+}
+
+
+.fakeimg {
+    height: 300px;
+    width: 100%;
+    background: #aaa;
+}
+.banner{
+    width: 30%;
+    height: 20%;
+}
+
+.disp{
+    background-color: #ffffff;
+    opacity: 0.7;
+    border: #0b2e13;
+    border-radius: 15px;
+    margin-top: 40px;
+    margin-bottom: 90px;
+
+
+}
+
+.inox{
+    margin: 10px;
+    color:#063453;
+    font-weight: bold;
+    text-align: center;
+    font-size: 25px;
+    padding: 20px;
+
+}
+
+
+.okk{
+    background-color: #C1AC5A;
+    border: #6ab9ff;
+    border-radius: 30px;
+    margin-bottom: 40px;
+}
+.head p{
+    font-size: 20px;
+    font-weight: bolder;
+    color: #303032;
+}
+
+.okp{
+    width: 35%;
+    color: #867246;
+    background-color: #d7ddec;
+    border: #B49859;
+    border-style: solid;
+    border-radius: 20px;
+    padding: 15px;
+    font-weight: bold;
+
+}
+
+
+
+
+.navbar{
+    /*background-color: #5F5F5F;*/
+    background-color: #ffffff;
+
+
+}
+.nav-item{
+    background-color: #c9ba6e;
+    width: 120px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-right: 20px;
+    text-align: center;
+    font-weight: bolder;
+    border: #1c7430;
+    border-radius: 20px;
+
+}
+.nav-item:hover{
+    background-color: #2649ac;
+
+}
+.nav-link{
+    color: #161617;
+    font-size: 15px;
+}
+.nav-link:hover{
+    color: #ffffff;
+}
+
+body{
+    background-color: #F7F7F7;
+}
+.caption{
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+
+
+header.masthead {
+    text-align: center;
+    color: #fff;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: 50%;
+    background-size: cover;
+}
+
+.contact-clean{
+    border: #5a6268;
+    border-radius: 20px;
+}
+
+
+
+
+
+.menuiconn{
+background-color: #f1cf2a;
+}
+
+/*body{*/
+/*    background: linear-gradient(135deg, #172a74, #21a9af);*/
+/*    background-color: #184e8e;*/
+/*}*/
+
+.forms{
+    padding: 50px;
+}
+.forms input{
+    margin: 10px;
+}
+
+
+.card {
+    margin-bottom: 20px;
+    /*height: fit-content;*/
+    height: 750px;
+}
+
+
+.intro h1{
+    font-weight: bold;
+    font-family: -apple-system;
+}
+
+.card-body p{
+    font-family: "Font Awesome 5 Brands";
+    font-size: 20px;
+}
+.card-body h5{
+    font-weight: bold
+}
+.card-body h4{
+    text-align: center;
+}
+.card-height{
+    height: 400px;
+}
+
+.footimage{
+    width: 30%;
+}
+.moto{
+    text-align: center;
+}
+.moto h1{
+    margin-top: 30px;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+.motodiv{
+    padding: 30px;
+}
+.moto-body{
+    margin-top: 30px;
+}
+.moto-body p{
+    font-size: 20px;
+    font-family: SansSerif;
+    font-weight: lighter;
+    margin-bottom: 50px;
+}
+
+.class img{
+    width: 90%;
+    height: 300px;
+    margin: 5%;
+    margin-bottom: 50px;
+}
+.class h2{
+    text-align: center;
+    font-family: Georgia;
+}
+.foot-img{
+    height: 200px;
+    width: 100%;
+}
+.call-us{
+    text-align: center;
+    margin-top: 20px;
+    border: black;
+    border-style: solid;
+    padding: 10px;
+}
+.faq{
+    margin: 10%;
+}
+
+.contact{
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 70%;
+}
+.logo{
+    width: 50%;
+
+}
+
+@media screen and (max-width: 900px) {
+    .head{ height: 300px }
+    .nav-item{ margin: 5px }
+    .head h1{font-size: 30px}
+    .head p{font-size: 20px}
+    .card{ width: 100% ;margin: 0px;padding: 0px;margin-bottom: 30px }
+    .banner{ width: 50%;}
+    .bbox{ width: 98%;padding: 0px;margin: 0px;}
+    .card-title {margin-top: 10px;}
+    .footimage { width: 70% }
+    .forms { padding: 0px}
+    .card-height{ height: 250px }
+    .moto h1{ font-size: 25px }
+    .navbar-brand{  width: 80% }
+    .foot-img{ width: 100%;height: 200px }
+    .faq{margin: 5%}
+    .contact{margin: 0px;width: 90%;padding-right: 8%;margin: 5%}
+    .submit{ margin-left: 9% }
+
+
+
+}
+
+@media screen and (max-width: 500px) {
+
+    .banner{ width: 50%; margin-top: 50px}
+}
+@media screen and (max-width: 990px) {
+
+ 
+    .card{ width: 100% ;margin: 0px;padding: 0px;margin-bottom: 30px;height: fit-content }
+}
+
+@media screen and (max-width: 1100px) {
+
+    .logo{width: 70%}
+}
+
+@media screen and (max-width: 1000px) {
+
+    .logo{width: 50%}
+}
+
+@media screen and (max-width: 300px) {
+
+    .inox{ font-size: 12px }
+    .logo{width: 90%;margin-left: 20%}
+
+}
+@media screen and (max-width: 400px) {
+
+    .inox{ font-size: 12px }
+    .logo{width: 90%;margin-left: 20%}
+
+}
+@media screen and (max-width: 400px) {
+
+    .nav-link{ font-size: 15px }
+
+}
+
+
+
+
+
+
