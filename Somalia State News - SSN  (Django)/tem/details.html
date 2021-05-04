@@ -1,0 +1,225 @@
+{% load static %}
+
+
+{% load static %}
+<!DOCTYPE html>
+
+<!-- Head part -->
+<!-- ========================================================================================================== -->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SSN</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:700%7CNunito:300,600" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}"/>
+{#  <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">#}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link type="text/css" rel="stylesheet" href="{% static 'css/style.css' %}"/>
+  <link type="text/css" rel="stylesheet" href="{% static 'css/newstyle.css' %}"/>
+
+</head>
+<!-- ========================================================================================================== -->
+
+
+<body>
+
+
+<!-- top part -->
+<!-- ========================================================================================================== -->
+<section>
+
+    <div class="top_part container-fluid">
+
+        <div class="row">
+
+            <div class="col-md-12 mail_page">
+
+                <a href="#">shuaybmuse@yahoo.com</a>
+                <a href="{% url 'about_us' %}">About Us</a>
+                <a href="{% url 'contact_us' %}">Contact Us</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ========================================================================================================== -->
+
+<!-- Menubar -->
+<!-- ========================================================================================================== -->
+<section style="margin-bottom: 20px" >
+
+
+    <nav class="navbar navbar-expand-lg navbar-light " style="background-color: rgb(107, 185, 240); padding: 15px">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <a class="navbar-brand" href="/">SSN</a>
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'breaking' %}">Breaking News</a>
+            </li>
+              <li class="nav-item">
+              <a class="nav-link" href="{% url 'job' %}">Jobs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="{% url 'editorial' %}">Editorials</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="{% url 'about_us' %}">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="{% url 'contact_us' %}">Contact Us</a>
+              </li>
+          </ul>
+          <form action="articles/" method="GET"  class="form-inline my-2 my-lg-0">
+              {% csrf_token %}
+               <input name="key" class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" >
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+
+</section>
+<!-- ========================================================================================================== -->
+
+
+
+
+<!-- News -->
+<!-- ========================================================================================================== -->
+<section>
+  <div class="container">
+    <div class="row">
+    <!-- left side -->
+    <!-- ========================================================================================================== -->
+          <div class="col-md-9">
+
+                  <div class="col-md-12">
+                  <div class="post ">
+                    <a class="post-img" href="#"><img class="breaking" src="{{ datas.img.url }}" alt=""></a>
+                    <div>
+                      <div style="margin-bottom: 10px" >
+                        <span class="post-date">{{datas.time}}</span>
+                      </div>
+                      <h3 >{{ datas.name }}</h3>
+                        <p>{{ datas.post }}</p>
+                    </div>
+                  </div>
+                </div>
+
+          </div>
+    <!-- ========================================================================================================== -->
+
+
+
+    <!-- right side -->
+    <!-- ========================================================================================================== -->
+        <div class="col-md-3">
+
+          <div class="aside-widget">
+            <div class="section-title">
+              <h2>Recent News</h2>
+            </div>
+
+              {% for dps in news %}
+                  <div class="post post-widget">
+                      <a class="post-img" href="{{ dps.get_absolute_url }}"><img class="sidejob" src="{{ dps.img.url }}" alt=""></a>
+                      <div class="post-body">
+                        <h3 class="post-title"><a href="{{ dps.get_absolute_url }}">{{ dps.name }}  </a></h3>
+                      </div>
+                  </div>
+              {% endfor %}
+
+
+
+        </div>
+    <!-- ========================================================================================================== -->
+    </div>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ========================================================================================================== -->
+
+
+
+<div class="container-fluid" style="background-color: rgb(107, 185, 240);">
+
+  <footer class="page-footer pt-4" >
+
+    <div class="container-fluid text-center">
+
+      <div class="row">
+
+        <div class="col-md-12">
+
+          <h2 style="font-size: 40px" class="text-uppercase">SSN</h2>
+          <h4 style="font-size: 20px">Somali States News</h4>
+          <p style="font-size: 20px">Email shuaybmuse@yahoo.com</p>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+    <div style=" color: black " class="footer-copyright text-center py-3">© 2020 Copyright:
+      <a href="#"> SSN NEWS</a>
+    </div>
+
+  </footer>
+
+</div>
+
+
+
+
+
+{#<script src="{% static 'js/jquery.min.js'%}"></script>#}
+{#<script src="{% static 'js/bootstrap.min.js'%}"></script>#}
+{#<script src="{% static 'js/main.js'%}"></script>#}
+
+    <script src="{% static 'js/jquery/jquery-2.2.4.min.js' %}"></script>
+    <!-- Popper js -->
+    <script src="{% static 'js/bootstrap/popper.min.js' %}"></script>
+    <!-- Bootstrap js -->
+    <script src="{% static 'js/bootstrap/bootstrap.min.js' %}"></script>
+    <!-- All Plugins js -->
+    <script src="{% static 'js/plugins/plugins.js' %}"></script>
+    <!-- Active js -->
+    <script src="{% static 'js/active.js' %}"></script>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
