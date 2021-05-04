@@ -1,0 +1,160 @@
+{% load static %}
+<!DOCTYPE html>
+
+<!-- Head part -->
+<!-- ========================================================================================================== -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+       <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Luckiest+Guy&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lobster&display=swap" rel="stylesheet"> <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'css/animate.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<!-- ========================================================================================================== -->
+
+
+
+<body style="background-image: url('{% static 'img/contact.jpg' %}');background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;">
+
+<section>
+		<nav class="navbar navbar-expand-lg navbar-light " style="background: rgba(0,0,0,0.25);">
+				<div class="container">
+					<a class="navbar-brand animate__animated animate__swing" href="/"><img class="Img" style="height: 75px" src="{% static 'img/logo.png' %}"></a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav ml-auto animate__animated animate__swing">
+							<li class="nav-item active">
+							<a class="nav-link" href="/">Home</a>
+							</li>
+
+                            <li class="nav-item">
+							<a class="nav-link" href="{% url 'service' %}">Service</a>
+							</li>
+
+							<li class="nav-item">
+							<a class="nav-link" href="{% url 'contact_us' %}">Contact Us</a>
+							</li>
+
+
+
+						</ul>
+					</div>
+				</div>
+		</nav>
+	</section>
+
+<!-- News -->
+<!-- ========================================================================================================== -->
+<section>
+
+    <div class="container">
+
+            <h3 class="About animate__animated animate__rubberBand">One-stop Shop for development services for innovative fintech software Ideas </h3>
+            <p class="About_p animate__animated animate__bounce">No matter if you’re building your product from scratch or scaling up your team, MinTecTrix here to  help our partners accelerate within their organizations and industries, providing  you with skilled and experienced professionals and involving new strategize ideas to delivery produce to our client ready to launch </p>
+
+    </div>
+
+</section>
+
+
+<!-- ========================================================================================================== -->
+
+{#========================================================================================================#}
+
+    <section >
+        <!-- Footer -->
+<footer class="page-footer font-small " style="background-color: #2a328d" >
+
+  <!-- Footer Links -->
+
+    <!-- Grid row-->
+    <div class="row text-center d-flex justify-content-center pt-5 mb-3">
+
+              <div class="col-md-2 mb-3">
+        <h6 class="text-uppercase font-weight-bold">
+          <a style="color: white" href="/">Home</a>
+        </h6>
+      </div>
+
+              <div class="col-md-2 mb-3">
+        <h6 class="text-uppercase font-weight-bold">
+          <a style="color: white" href="{% url 'service' %}">Service</a>
+        </h6>
+      </div>
+
+      <div class="col-md-2 mb-3">
+        <h6 class="text-uppercase font-weight-bold">
+          <a style="color: white" href="{% url 'about_us' %}">About us</a>
+        </h6>
+      </div>
+
+      <div class="col-md-2 mb-3">
+        <h6 class="text-uppercase font-weight-bold">
+          <a style="color: white" href="{% url 'contact_us' %}">Contact Us</a>
+        </h6>
+      </div>
+
+
+    </div>
+    <!-- Grid row-->
+    <hr class="rgba-white-light" style="margin: 0 15%;">
+
+    <!-- Grid row-->
+    <div class="row d-flex text-center justify-content-center mb-md-0 mb-4">
+
+      <!-- Grid column -->
+      <div class="col-md-8 col-12 mt-5">
+        <p style="line-height: 1.7rem; color: black;font-size: 18px">We employ the best SDLC practice processes and development methodologies that best suite our client need, building rapid cutting-edge technology solutions in a structured and methodical way.</p>
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row-->
+
+    <!-- Grid row-->
+
+    <!-- Grid row-->
+
+
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3" style="margin-bottom: 10px">© 2020 Copyright:
+    <a href="/"> Min Tec Trix</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+    </section>
+
+{#========================================================================================================#}
+
+
+
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" ></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" ></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" ></script>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
